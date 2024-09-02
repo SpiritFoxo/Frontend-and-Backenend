@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
     <head>
+        <!--установка кодировки, фавиконки и адаптива-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
     </head>
 
     <body>
+        <!--шапка страницы-->
         <header>
             <div style="display: flex; justify-content: space-between; align-items: center;">
-            <img src="images/logo.svg" height="75px" width="75px">
+            <img src="images/logo.svg" alt="logotype" style="height: 75px; width: 75px;">
                 <div style="display: flex; flex-direction: column;">
                     <p>Группа ЭФБО-04-23</p>
                     <p>Глеб Лобачев Алексеевич</p>
@@ -18,14 +22,18 @@
             </div>
         </header>
 
-        <div style="display:  flex;">
-            <ul>Главная</ul>
-            <ul><a href="index.html">Первый семестр</a></ul>
-            <ul><a href="index1.html">Второй семестр</a></ul>
-            <ul>Услуги</ul>
-            <ul>Авторизация</ul>
+        <!--навбар-->
+        <div>
+            <ul style="display: flex; flex-direction: row;align-items: center;justify-content: flex-start; column-gap: 25px; list-style-type: none;">
+                <li>Главная</li>
+                <li><a href="index.html">Первый семестр</a></li>
+                <li><a href="index1.html">Второй семестр</a></li>
+                <li>Услуги</li>
+                <li>Авторизация</li>
+            </ul>
         </div>
 
+        <!--боковая панелька с ссылками на элементы этой же страницы-->
         <div style="display: flex;">
             <aside style="padding-right: 10px; width: 25%;">
                 <p>Навигация по странице</p>
@@ -36,23 +44,24 @@
                 </div>
             </aside>
 
+            <!--основная часть страницы-->
             <main>
                 <h1>Разработка веб-приложений</h1>
 
                 <div style="display: flex; flex-flow: row; column-gap: 15px;">
 
-                    <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;"">
-                        <img src="images/ferrari488.jpg" width="70%">
+                    <div style="display: flex; flex-flow: column; justify-content: center; align-items: center;">
+                        <img src="images/ferrari488.jpg" alt="landig page screenshot" style="width: 70%;">
                         <p style="text-align: center;">Сайт-визитка</p>
                     </div>
 
-                    <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;"">
-                        <img src="images/fordgt40.jpg" width="70%">
+                    <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
+                        <img src="images/fordgt40.jpg" alt="corporative website screenshot" style="width: 70%;">
                         <p style="text-align: center;">Корпоративный сайт</p>
                     </div>
 
-                    <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;"">
-                        <img src="images/moreporsche911.jpg" width="70%">
+                    <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
+                        <img src="images/moreporsche911.jpg" alt="Internet shop website screenshot" style="width: 70%;">
                         <p style="text-align: center;">Интернет-магазин</p>
                     </div>
 
@@ -70,13 +79,14 @@
             </main>
         </div>
 
+        <!--нижний колонтитул страницы-->
         <footer>
             <div style="display: flex; justify-content: flex-end;">
                 <p style="flex-basis: 90%; text-align: center;">© Лобачев Глеб Алексеевич, 2024</p>
-                <a href="https://web.whatsapp.com/" target="_blank" style="flex-basis: 5%;"><img src="images/whatsapp.png" width="30px" height="30px"></a>
-                <a href="https://web.telegram.org/" target="_blank" style="flex-basis: 5%;"><img src="images/telegram.png" width="30px" height="30px"></a>
+                <a href="https://web.whatsapp.com/" target="_blank" style="flex-basis: 5%;"><img src="images/whatsapp.png" alt="whatsapp logotype" style="width: 30px; height:30px;"></a>
+                <a href="https://web.telegram.org/" target="_blank" style="flex-basis: 5%;"><img src="images/telegram.png" alt="telegram logotype" style="width: 30px; height:30px;"></a>
             </div>
         </footer>
-        
+
     </body>
 </html>
