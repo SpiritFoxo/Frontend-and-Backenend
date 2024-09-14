@@ -60,17 +60,18 @@
                     <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
                         <img src="images/fordgt40.jpg" alt="corporative website screenshot" style="width: 70%;">
                         <p style="text-align: center;">Корпоративный сайт</p>
-                        <button">Заказать</button>
+                        <button class="openModal">Заказать</button>
                     </div>
 
                     <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
                         <img src="images/moreporsche911.jpg" alt="Internet shop website screenshot" style="width: 70%;">
                         <p style="text-align: center;">Интернет-магазин</p>
-                        <button>Заказать</button>
+                        <button class="openModal">Заказать</button>
                     </div>
 
                 </div>
 
+                
                 <h2 id="landingpage">Сайт-визитка</h2>
                 <p>Сайт-визитка – идеальное решение для компаний, которые хотят представить себя в Интернете и установить контакт с потенциальными клиентами. Я разработаю для вас стильный и лаконичный сайт, который отразит суть вашего бизнеса и выделит его среди конкурентов. Сайт-визитка включает в себя основные страницы, такие как "О компании", "Услуги", "Контакты", и может быть дополнен портфолио и отзывами клиентов.</p>
 
@@ -93,29 +94,31 @@
         </footer>
 
         
-        <div class="modal">
-        <h2>Форма обратной связи</h2>
-            <form id="contactForm">
-                <!-- Поле для ввода имени -->
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" required>
+        <div id="modal">
+            <h2>Форма обратной связи</h2>
+                <p class = "close">close button</p>
+                <form id="contactForm">
+                    <!-- Поле для ввода имени -->
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <!-- Поле для ввода электронной почты -->
-                <label for="email">Электронная почта:</label>
-                <input type="email" id="email" name="email" required>
+                    <!-- Поле для ввода электронной почты -->
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <!-- Многострочное текстовое поле для комментариев -->
-                <label for="comments">Комментарии:</label>
-                <textarea id="comments" name="comments"></textarea>
+                    <!-- Многострочное текстовое поле для комментариев -->
+                    <label for="comments">Комментарии:</label>
+                    <textarea id="comments" name="comments"></textarea>
 
-                <!-- Кнопка отправки формы -->
-                <button type="submit">Отправить</button>
-            </form>
-            <div id="successMessage" style="display:none;">Форма успешно отправлена!</div>
+                    <!-- Кнопка отправки формы -->
+                    <button type="submit">Отправить</button>
+                </form>
+                <div id="successMessage" style="display:none;">Форма успешно отправлена!</div>
         </div>
     </div>
 
-    <script src="script.js"></script> <!-- Подключаем JavaScript -->
+    <script type="text/javascript" src="script.js"></script> <!-- Подключаем JavaScript -->
+
 
     </body>
 </html>

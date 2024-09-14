@@ -6,12 +6,13 @@ const successMessage = document.getElementById("successMessage");
 
 // Открываем модальное окно при нажатии на кнопку
 btn.onclick = function() {
-    modal.style.display = "block";
+    console.log(modal)
+    modal.style.display = 'block';
 }
 
 // Закрываем модальное окно при нажатии на "X"
 span.onclick = function() {
-    modal.style.display = "none";
+    modal.style.display = 'none';
 }
 
 // Закрываем модальное окно при клике вне его области
