@@ -9,7 +9,7 @@
     height: 100%;
     overflow: auto;
     background-color: rgb(0,0,0); /* Черный фон */
-    background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+    background-color: rgba(0, 0, 0, 0.74); /* Полупрозрачный фон */
 }
 
 #modal-content {
@@ -32,4 +32,16 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#formBody {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    position: absolute;
+    margin: -100px 0 0 -200px;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 500px;
 }

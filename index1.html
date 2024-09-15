@@ -60,13 +60,13 @@
                     <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
                         <img src="images/fordgt40.jpg" alt="corporative website screenshot" style="width: 70%;">
                         <p style="text-align: center;">Корпоративный сайт</p>
-                        <button class="openModal">Заказать</button>
+                        <button id="openModal1">Заказать</button>
                     </div>
 
                     <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
                         <img src="images/moreporsche911.jpg" alt="Internet shop website screenshot" style="width: 70%;">
                         <p style="text-align: center;">Интернет-магазин</p>
-                        <button class="openModal">Заказать</button>
+                        <button id="openModal2">Заказать</button>
                     </div>
 
                 </div>
@@ -95,29 +95,71 @@
 
         
         <div id="modal">
-            <h2>Форма обратной связи</h2>
-                <p class = "close">close button</p>
-                <form id="contactForm">
-                    <!-- Поле для ввода имени -->
-                    <label for="name">Имя:</label>
-                    <input type="text" id="name" name="name" required>
+            <div id = "formBody">
+                <div style="display: flex; flex-direction: column; row-gap: 15px;">
+                    <div style="display: flex;flex-direction: row;align-items: center; column-gap: 10px;">
+                        <h2>Форма обратной связи</h2>
+                        <p class = "close">close button</p>
+                    </div>
 
-                    <!-- Поле для ввода электронной почты -->
-                    <label for="email">Электронная почта:</label>
-                    <input type="email" id="email" name="email" required>
+                    <p id="selectedService">Рыба</p>
 
-                    <!-- Многострочное текстовое поле для комментариев -->
-                    <label for="comments">Комментарии:</label>
-                    <textarea id="comments" name="comments"></textarea>
+                    <form id="contactForm" action="thanks.html" method="get" style="display: flex; flex-direction: column; row-gap: 6px;">
+                        <!-- Поле для ввода имени -->
+                        <div>
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
 
-                    <!-- Кнопка отправки формы -->
-                    <button type="submit">Отправить</button>
-                </form>
-                <div id="successMessage" style="display:none;">Форма успешно отправлена!</div>
+                        <!-- Поле для ввода электронной почты -->
+                        <div>
+                            <label for="email">Электронная почта:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <!-- Поле для ввода телефона -->
+                        <div>
+                            <label for="phone">телефон:</label>
+                            <input type="tel" id="phone" name="phone" required>          
+                        </div>
+
+                         <!-- Поле для указания страны -->
+                        <div>
+                            <label for="country">страна:</label>
+                            <select id="country" name="country" required>
+                                <option value="">-----</option>
+                                <option value="ru">Россия</option>
+                                <option value="kz">Казахстан</option>
+                            </select>
+                        </div>
+                        
+                         <!-- Поле для ввода даты -->
+                        <div>
+                             <label for="date">Дата:</label>
+                             <input type="date" id="date" required>
+                        </div>
+
+                        <!-- Многострочное текстовое поле для комментариев -->
+                        <div>
+                            <label for="comments">Комментарии:</label>
+                            <textarea id="comments" name="comments"></textarea>
+                        </div>
+
+                         <!-- Согласие со всем -->
+                          <div>
+                            <input type="checkbox" id="chkbox" name="chkbox" required>
+                            <label for="chkbox">я согласен на обработку моих персональных данных</label>
+                          </div>
+
+
+                        <!-- Кнопка отправки формы -->
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <script type="text/javascript" src="script.js"></script> <!-- Подключаем JavaScript -->
+    <script src="script.js"></script> <!-- Подключаем JavaScript -->
 
 
     </body>
