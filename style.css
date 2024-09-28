@@ -34,6 +34,28 @@
     cursor: pointer;
 }
 
+h1{
+    font-family: Impact, fantasy;
+    font-weight: 500;
+  }
+
+  h2{
+    font-family: Impact, fantasy;
+    font-weight: 300;
+  }
+
+  p{
+    font-family: DejaVu Sans Mono, monospace;
+  }
+
+header{
+    background-color:#ffffff;
+    
+}
+header p{
+    font-family: Courier New, monospace;
+}
+
 #formBody {
     background-color: white;
     border-radius: 15px;
@@ -64,6 +86,16 @@ aside{
     border-color: #000;
 }
 
+.link { text-decoration: none; }
+.link:hover{
+    color: #ff0000;
+}
+.link:active{color:#00ffd5;}
+
+#asideElements{
+    row-gap:10px;
+}
+
 main{
     background-color:#e2e2e2;
 }
@@ -76,6 +108,8 @@ main{
     -moz-box-shadow: 4px 7px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 7px 8px 0px rgba(34, 60, 80, 0.2);
 }
+
+.itemCards:hover{background-color:aliceblue;}
 
 .orderButton{
     width: 200px;
