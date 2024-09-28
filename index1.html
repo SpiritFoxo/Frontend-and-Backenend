@@ -14,7 +14,7 @@
     <body>
         <!--шапка страницы-->
         <header>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div id="siteHeader">
             <img src="images/logo.svg" alt="logotype" style="height: 75px; width: 75px;">
                 <div style="display: flex; flex-direction: column;">
                     <p>Группа ЭФБО-04-23</p>
@@ -24,7 +24,7 @@
         </header>
 
         <!--навбар-->
-        <div>
+        <div id="navBar">
             <ul style="display: flex; flex-direction: row;align-items: center;justify-content: flex-start; column-gap: 25px; list-style-type: none;">
                 <li>Главная</li>
                 <li><a href="index.html">Первый семестр</a></li>
@@ -51,22 +51,22 @@
 
                 <div style="display: flex; flex-flow: row; column-gap: 15px;">
 
-                    <div style="display: flex; flex-flow: column; justify-content: center; align-items: center;">
+                    <div class="itemCards" style="display: flex; flex-flow: column; justify-content: center; align-items: center;">
                         <img src="images/ferrari488.jpg" alt="landig page screenshot" style="width: 70%;">
                         <p style="text-align: center;">Сайт-визитка</p>
-                        <button id="openModal">Заказать</button>
+                        <button id="openModal" class="orderButton">Заказать</button>
                     </div>
 
-                    <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
+                    <div class="itemCards" style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
                         <img src="images/fordgt40.jpg" alt="corporative website screenshot" style="width: 70%;">
                         <p style="text-align: center;">Корпоративный сайт</p>
-                        <button id="openModal1">Заказать</button>
+                        <button id="openModal1" class="orderButton">Заказать</button>
                     </div>
 
-                    <div style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
+                    <div class="itemCards" style="display: flex; flex-flow: column; justify-content: center;align-items: center;">
                         <img src="images/moreporsche911.jpg" alt="Internet shop website screenshot" style="width: 70%;">
                         <p style="text-align: center;">Интернет-магазин</p>
-                        <button id="openModal2">Заказать</button>
+                        <button id="openModal2" class="orderButton">Заказать</button>
                     </div>
 
                 </div>
@@ -96,7 +96,7 @@
         
         <div id="modal">
             <div id = "formBody">
-                <div style="display: flex; flex-direction: column; row-gap: 15px;">
+                <div style="display: flex; flex-direction: column; row-gap: 15px; padding-left: 15px;">
                     <div style="display: flex;flex-direction: row;align-items: center; column-gap: 10px;">
                         <h2>Форма обратной связи</h2>
                         <p class = "close">close button</p>
@@ -106,21 +106,21 @@
 
                     <form id="contactForm" action="thanks.html" method="get" style="display: flex; flex-direction: column; row-gap: 6px;">
                         <!-- Поле для ввода имени -->
-                        <div>
+                        <div style="display: flex;flex-direction: row;align-items: flex-end;justify-content: flex-start;">
                             <label for="name">Имя:</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" class="formLabel" required>
                         </div>
 
                         <!-- Поле для ввода электронной почты -->
-                        <div>
+                        <div style="display: flex;flex-direction: row;align-items: flex-end;justify-content: flex-start;">
                             <label for="email">Электронная почта:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" class="formLabel" required>
                         </div>
 
                         <!-- Поле для ввода телефона -->
-                        <div>
+                        <div style="display: flex;flex-direction: row;align-items: flex-end;justify-content: flex-start;">
                             <label for="phone">телефон:</label>
-                            <input type="tel" id="phone" name="phone" required>          
+                            <input type="tel" id="phone" name="phone" class="formLabel" required>          
                         </div>
 
                          <!-- Поле для указания страны -->
@@ -134,15 +134,15 @@
                         </div>
                         
                          <!-- Поле для ввода даты -->
-                        <div>
+                        <div style="display: flex;flex-direction: row;align-items: flex-end;justify-content: flex-start;">
                              <label for="date">Дата:</label>
                              <input type="date" id="date" required>
                         </div>
 
                         <!-- Многострочное текстовое поле для комментариев -->
-                        <div>
+                        <div style="display: flex;flex-direction: row;align-items: flex-end;justify-content: flex-start;">
                             <label for="comments">Комментарии:</label>
-                            <textarea id="comments" name="comments"></textarea>
+                            <textarea id="comments" name="comments" class="formLabel"></textarea>
                         </div>
 
                          <!-- Согласие со всем -->
@@ -153,7 +153,7 @@
 
 
                         <!-- Кнопка отправки формы -->
-                        <button type="submit">Отправить</button>
+                        <button type="submit" class="orderButton">Отправить</button>
                     </form>
                 </div>
             </div>
