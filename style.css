@@ -46,6 +46,7 @@ h1{
 
   p{
     font-family: DejaVu Sans Mono, monospace;
+    color: rgb(255, 160, 160);
   }
 
 header{
@@ -54,6 +55,12 @@ header{
 }
 header p{
     font-family: Courier New, monospace;
+}
+
+td{
+    background: navy;
+    color:#48ff00;
+    border: 5px double #000;
 }
 
 #formBody {
@@ -81,7 +88,7 @@ header p{
 }
 
 aside{
-    background-color:#fdf3f3;
+    background-color:#45c1f1;
     border:thick;
     border-color: #000;
 }
@@ -97,7 +104,7 @@ aside{
 }
 
 main{
-    background-color:#e2e2e2;
+    background-color:#009600;
 }
 
 .itemCards{
