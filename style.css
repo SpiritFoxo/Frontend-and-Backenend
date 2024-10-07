@@ -111,6 +111,8 @@ main{
     box-shadow: #000;
     background-color:white;
     border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 20px;
     -webkit-box-shadow: 4px 7px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 7px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 7px 8px 0px rgba(34, 60, 80, 0.2);
@@ -158,6 +160,13 @@ main{
 
 .orderButton:hover:before {
     opacity: 1;
+}
+.grid-container {
+    display: grid; /* Grid Layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    grid-template-rows: repeat(2, auto); /* 2 строки */
+    gap: 10px; /* Промежуток между элементами */
+    padding: 20px;
 }
 
 .orderButton:after {
