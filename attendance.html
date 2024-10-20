@@ -24,13 +24,15 @@
         </header>
 
         <!--навбар-->
-        <div>
-            <ul style="display: flex; flex-direction: row;align-items: center;justify-content: flex-start; column-gap: 25px; list-style-type: none;">
-                <li>Главная</li>
-                <li><a href="index.html">Первый семестр</a></li>
-                <li><a href="index1.html">Второй семестр</a></li>
-            </ul>
-        </div>
+        <div id="navBar">
+          <ul id="navul">
+              <li>Главная</li>
+              <li><a href="index.html">Первый семестр</a></li>
+              <li><a href="index1.html">Второй семестр</a></li>
+              <li><a href="attendance.html">Услуги</a></li>
+              <li>Авторизация</li>
+          </ul>
+      </div>
 
         <!--боковая панелька с ссылками на элементы этой же страницы-->
         <div style="display: flex;">
@@ -215,10 +217,13 @@
                 <!--Пдфка-->
                 <div>
                     <h2 id="plan">Рабочая программа</h2>
-                    <object type="application/pdf" data="/pdf/pdfobject.pdf" width="500" height="500"></object>
+                    <object id="pdffile" type="application/pdf" data="/pdf/pdfobject.pdf" width="500" height="500"></object>
                 </div>
             </main>
         </div>
+
+        <button class="back-to-top hidden">Back To Top</button>
+        <script src="topbutton.js"></script>
 
         <!--нижний колонтитул страницы-->
         <footer>

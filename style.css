@@ -1,3 +1,4 @@
+
 /* Стили для модального окна */
 #modal {
     display: none; /* Скрываем модальное окно по умолчанию */
@@ -103,6 +104,22 @@ aside{
     row-gap:10px;
 }
 
+.hidden {
+    display: none;
+  }
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: #ff00c8;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+
 main{
     background-color:#009600;
 }
@@ -131,6 +148,15 @@ main{
     position: relative;
     z-index: 0;
     border-radius: 10px;
+}
+
+#navul{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start; 
+    column-gap: 25px;
+    list-style-type: none
 }
 
 .orderButton:before {
@@ -197,3 +223,49 @@ main{
     transform: translateY(0rem);
   }
   
+@media (min-width: 320px) and (max-width: 800px) {
+    aside{
+        display: none;
+    }
+    #navul{
+        column-gap: 0px;
+    }
+
+    .grid-container{
+        display: block;
+    }
+
+    img{
+        max-width: 100%;
+    }
+    video{
+        width: 70%;
+        position: center;
+    }
+
+    table{
+        width: 70%;
+    }
+    iframe{
+        width: 340px;
+    }
+
+    #navBar{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color:white;
+    }
+
+    #navul{
+        padding-left: 0;
+        column-gap: 5px;
+        
+    }
+
+    #pdffile{
+
+        width: 320px;
+        height: 320px;
+    }
+}
