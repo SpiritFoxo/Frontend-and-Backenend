@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <!--установка кодировки, фавиконки и адаптива-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="bt.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        <!--шапка страницы-->
+        <header>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <img src="images/logo.svg" alt="logotype" style="height: 75px; width: 75px;">
+                <div style="display: flex; flex-direction: column;">
+                    <p>Группа ЭФБО-04-23</p>
+                    <p>Глеб Лобачев Алексеевич</p>
+                </div>
+            </div>
+        </header>
+
+        <!--навбар-->
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active">Главная</a></li>
+              <li class="nav-item"><a class="nav-link active" href="index.html">Первый семестр</a></li>
+              <li class="nav-item"><a class="nav-link active" href="index1.html">Второй семестр</a></li>
+              <li class="nav-item"><a class="nav-link active" href="attendance.html">Услуги</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#">Авторизация</a></li>
+          </ul>
+      </div>
+
+        <!--боковая панелька с ссылками на элементы этой же страницы-->
+        <div style="display: flex;">
+            <aside style="padding-right: 10px; width: 25%;">
+                <p>Навигация по странице</p>
+                <div style="display: flex; flex-flow: column;">
+                    <a href="#lectures">Лекции</a>
+                    <a href="#seminars">Практики</a>
+                    <a href="#adress">Адрес вуза</a>
+                    <a href="#plan">Рабочая программа</a>
+                </div>
+            </aside>
+            <!--основная часть страницы-->
+            <main>
+                <h2 id="lectures">Лекции</h2>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Номер</th>
+                        <th scope="col">Тема</th>
+                        <th scope="col">Посещение</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox" checked disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2</td>
+                        <td>Углубленное изучение HTML</td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">3</td>
+                        <td>Основы работы с CSS</td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">4</td>
+                        <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">5</td>
+                        <td>Bootstrap — работа с фреймворком</td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">6</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">7</td>
+                        <td>Работа с DOM и событиями в JavaScript</td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">8</td>
+                        <td>Введение в GitHub и GitHub Pages</td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                <h2 id="seminars">Практики</h2>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Номер</th>
+                        <th scope="col">Тема</th>
+                        <th scope="col">Посещение</th>
+                        <th scope="col">Выполнение</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row">1</td>
+                        <td>Основы языка HTML</td>
+                        <td><input type="checkbox" checked disabled></td>
+                        <td><input type="checkbox" checked disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">2</td>
+                        <td>Формы и кнопки в HTML</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">3</td>
+                        <td>Таблицы и интерактивные элементы HTML</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">4</td>
+                        <td>Основы работы с CSS</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">5</td>
+                        <td>Работа с классами в CSS</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">6</td>
+                        <td>Работа с сетками и разметкой в HTML</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">7</td>
+                        <td>Адаптивная верстка</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">8</td>
+                        <td>Bootstrap</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">9</td>
+                        <td>Основы языка JavaScript</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">10</td>
+                        <td>Базовые задачи на JS</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">11</td>
+                        <td>DOM-структура приложений и работа с объектами в языке JS</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">12</td>
+                        <td>Встраивание скриптов</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">13</td>
+                        <td>Отладка сценариев</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">14</td>
+                        <td>Анимации и работа с ними</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">15</td>
+                        <td>Github</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                      <tr>
+                        <td scope="row">16</td>
+                        <td>Защита проекта</td>
+                        <td><input type="checkbox" disabled></td>
+                        <td><input type="checkbox" disabled></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+                    <div id="carouselExample" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/ferrari488.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/fordgt40.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/porsche.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
+                <!--Карта-->
+                <h2 id="adress">Занятия проходят по адресу просп. Вернадского, 78, стр. 4</h2>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A49d7ddc7bb1c342f68645779e304a2aa5ed47b4d1cc471e65f54201454809b28&amp;source=constructor" width="424" height="372"></iframe>
+
+                <!--Пдфка-->
+                <div>
+                    <h2 id="plan">Рабочая программа</h2>
+                    <object id="pdffile" type="application/pdf" data="/pdf/pdfobject.pdf" width="500" height="500"></object>
+                </div>
+            </main>
+        </div>
+
+        <button class="back-to-top hidden">Back To Top</button>
+        <script src="topbutton.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!--нижний колонтитул страницы-->
+        <footer>
+            <div style="display: flex; justify-content: flex-end;">
+                <p style="flex-basis: 90%; text-align: center;">© Лобачев Глеб Алексеевич, 2024</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
