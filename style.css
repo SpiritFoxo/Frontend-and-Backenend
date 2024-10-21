@@ -268,4 +268,34 @@ main{
         width: 320px;
         height: 320px;
     }
+
+    #modal h2{
+        font-size: 15px;
+    }
+
+    #modal{
+        padding-bottom: 20px;
+    }
+
+    .close{
+        font-size: 12px;
+    }
+
+    #contactForm{
+
+        width: 70%;
+    }
+
+    #formBody{
+        width: 90%;
+        padding-left: 20px;
+    }
+
+    .cflabels{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
 }
