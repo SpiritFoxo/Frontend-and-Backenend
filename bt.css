@@ -17,6 +17,7 @@ h4{
     padding: 0.5rem;
     border: none;
     cursor: pointer;
+    z-index: 999;
 }
 .navbar-dark{
     --bs-navbar-active-color: #fff8e4;
@@ -54,15 +55,16 @@ h4{
 
 #carouselExample{
     margin-bottom: 35px;
+    margin-left: calc(50% / 4);
 }
 
 #firsttable{
-    
+    margin-left: calc(50% / 4);
     width: 75%;
-    vertical-align: middle
+    position: center;
 }
 #secondtable{
-    margin-left: 20px;
+    margin-left: calc(50% / 4);
     margin-bottom: 30px;
     width: 75%;
     position: center;
@@ -72,5 +74,23 @@ body{
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(8, 11, 27, 0.5);
+    box-shadow: inset 0 0 0 2000px rgba(13, 23, 32, 0.5);
+}
+
+#sidebar{
+    background-color:rgba(13, 15, 19, 0.8);
+}
+
+header{
+    background-color: #171a1f;
+    border-color: #f3e7c2;
+}
+
+header p{
+    color: #f3e7c2;
+    margin-top: 10px;
+}
+
+footer{
+    color: #f3e7c2;
 }
