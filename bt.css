@@ -36,7 +36,7 @@ h4{
 }
 
 .accordion{
-    --bs-accordion-active-bg: #0f2235;
+    --bs-accordion-active-bg: #223268;
     --bs-accordion-bg: #4e5052;
     margin-bottom: 35px;
 }
@@ -55,6 +55,9 @@ h4{
 
 #carouselExample{
     margin-bottom: 35px;
+    margin-left: calc(50% / 4);
+}
+object{
     margin-left: calc(50% / 4);
 }
 
@@ -93,4 +96,20 @@ header p{
 
 footer{
     color: #f3e7c2;
+    background-color: #171a1f;
+    margin-top: 10px;
+
+}
+
+
+@media (max-width: 800px){
+
+    #sidebar{
+        display: none;
+    }
+
+    .back-to-top{
+        display: none;
+    }
+
 }
