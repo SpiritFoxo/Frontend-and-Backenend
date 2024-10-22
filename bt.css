@@ -57,9 +57,9 @@ h4{
 }
 
 #firsttable{
-    margin-left: 20px;
+    
     width: 75%;
-    position: center;
+    vertical-align: middle
 }
 #secondtable{
     margin-left: 20px;
