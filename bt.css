@@ -104,12 +104,41 @@ footer{
 
 @media (max-width: 800px){
 
+    header{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     #sidebar{
         display: none;
+        overflow-x: hidden;
+    }
+    .navbar{
+        padding-left: 5px;
     }
 
     .back-to-top{
-        display: none;
+        right: 40rem;
     }
 
+    iframe{
+        width: 300px;
+        height: 310px;
+        margin-left: calc(50% / 6);
+    }
+
+    object{
+        width: 300px;
+        margin-left: calc(50% / 6);
+    }
+
+    #firsttable{
+        margin-left: calc(50% / 4);
+        width: 75%;
+    }
+    #secondtable{
+        margin-left: calc(50% / 8);
+        margin-bottom: 30px;
+        width: 75%;
+    }
 }
