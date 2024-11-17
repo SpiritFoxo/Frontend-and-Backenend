@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Работа с DOM</title>
+  <style>
+    form {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Привет!</h1>
+  <h2>Наш заголовок H2</h2>
+  <p>Это старый текст параграфа.</p>
+  <iframe src="https://www.example.com" width="600" height="400"></iframe>
+
+  <form id="userForm">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Телефон:</label>
+    <input type="text" id="phone" name="phone"><br><br>
+
+    <label for="date">Дата:</label>
+    <input type="date" id="date" name="date"><br><br>
+
+    <label for="comment">Комментарий:</label>
+    <textarea id="comment" name="comment" required></textarea><br><br>
+
+    <button type="submit">Отправить</button>
+  </form>
+
+  <script>
+    // Часть 1: Работа с DOM
+    // 1. Изменяем текст заголовка H1
+    const h1 = document.querySelector('h1');
+    h1.textContent = "Добро пожаловать на наш сайт!";
+
+    // 2. Меняем цвет текста заголовка H2
+    const h2 = document.querySelector('h2');
+    h2.style.color = 'red';
+
+    // 3. Изменяем текст первого параграфа
+    const paragraph = document.querySelector('p');
+    paragraph.textContent = "Это новый текст параграфа.";
+
+    // 4. Скрываем видео
+    const iframe = document.querySelector('iframe');
+    iframe.style.display = 'none';
+
+    // Часть 2: Работа с объектами
+    const formData = {
+      name: '',
+      email: '',
+      phone: '',
+      date: '',
+      comment: '',
+      printData: function () {
+        console.log(`Имя: ${this.name}`);
+        console.log(`E-mail: ${this.email}`);
+        console.log(`Телефон: ${this.phone}`);
+        console.log(`Дата: ${this.date}`);
+        console.log(`Комментарий: ${this.comment}`);
+      }
+    };
+
+    function submitForm(event) {
+      event.preventDefault(); // Предотвращаем стандартное поведение формы
+
+      // Получаем значения полей формы
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const date = document.getElementById('date').value.trim();
+      const comment = document.getElementById('comment').value.trim();
+
+      // Проверяем обязательные поля
+      if (!name || !email || !comment) {
+        alert("Пожалуйста, заполните обязательные поля (имя, e-mail, комментарий).");
+        return;
+      }
+
+      // Проверяем телефон (только цифры)
+      if (phone && !/^\d+$/.test(phone)) {
+        alert("Телефон должен содержать только цифры.");
+        return;
+      }
+
+      // Проверяем корректность e-mail
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert("Введите корректный e-mail.");
+        return;
+      }
+
+      // Записываем данные в объект formData
+      formData.name = name;
+      formData.email = email;
+      formData.phone = phone;
+      formData.date = date;
+      formData.comment = comment;
+
+      // Выводим данные в консоль
+      formData.printData();
+      alert("Данные успешно отправлены!");
+    }
+
+    // Часть 3: Обработчик формы
+    const form = document.getElementById('userForm');
+    form.addEventListener('submit', submitForm);
+  </script>
+</body>
+</html>
