@@ -40,8 +40,8 @@ button.addEventListener("click", () => {
 
 const studentPhoto = document.querySelector("#student-photo");
 studentPhoto.addEventListener("mouseover", () => {
-    studentPhoto.style.width = "110%";
-    studentPhoto.style.height = "110%";
+    studentPhoto.style.width = "40%";
+    studentPhoto.style.height = "15%";
 });
 studentPhoto.addEventListener("mouseout", () => {
     studentPhoto.style.width = "";
