@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <style>
+        h1 {
+          transition: transform 0.3s ease-in-out;
+        }
+      
+        h1:hover {
+          transform: scale(1.2);
+        }
+      </style>
+
+    <h1>Test</h1>
+    <p id="animatedParagraph">Нажми на меня!</p>
+
+    <style>
+        #lectureTable {
+          display: none;
+          opacity: 0;
+          transition: opacity 0.5s ease;
+        }
+      
+        #lectureTable.show {
+          display: block;
+          opacity: 1;
+        }
+      </style>
+
+
+    <button id="showLecturesBtn">Показать лекции</button>
+    <table id="lectureTable" border="1">
+    <tr>
+        <th>Лекция</th>
+        <th>Дата</th>
+    </tr>
+    <tr>
+        <td>Лекция 1</td>
+        <td>2024-11-17</td>
+    </tr>
+    </table>
+
+
+    <style>
+        .student-photo {
+          width: 20%;
+          height: 20%;
+          transition: transform 0.5s ease;
+        }
+      
+        .student-photo:hover {
+          transform: rotate(360deg);
+        }
+      </style>
+
+    <img src="images/ferrari488.jpg" alt="Фото" class="student-photo">
+
+    <style>
+        #formMessage {
+          opacity: 0;
+          color: black;
+          transition: opacity 0.5s, color 0.5s;
+        }
+      
+        #formMessage.show {
+          opacity: 1;
+          color: green;
+        }
+      </style>
+
+    <form id="studentForm">
+        <input type="text" placeholder="Ваше имя" required>
+        <button type="submit">Отправить</button>
+    </form>
+    <p id="formMessage">Форма отправлена!</p>
+
+
+    <script src="js14.js"></script>
+
+</body>
+</html>
